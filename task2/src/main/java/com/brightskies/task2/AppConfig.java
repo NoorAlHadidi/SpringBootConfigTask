@@ -1,5 +1,6 @@
 package com.brightskies.task2;
 
+import com.brightskies.task2.Service.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
