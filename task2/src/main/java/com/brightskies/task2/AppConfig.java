@@ -8,16 +8,16 @@ import org.springframework.context.annotation.Scope;
 public class AppConfig {
     @Bean
     @Scope(value="singleton")
-    public FirstService getFirstService() {
+    public FirstService firstService() {
         return new FirstService();
     }
     @Bean
     @Scope(value="prototype")
-    public SecondService getSecondService() {
+    public SecondService secondService() {
         return new SecondService();
     }
-    @Bean
-    public ServiceConsumer getServiceConsumer() {
-        return new ServiceConsumer();
-    }
+    /*@Bean
+    public ServiceConsumer serviceConsumer() {
+        return new ServiceConsumer(firstService());
+    }*/
 }

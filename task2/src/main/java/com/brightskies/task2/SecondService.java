@@ -1,8 +1,11 @@
 package com.brightskies.task2;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class SecondService implements Service{
     @Override
-    public void getMessage() {
-        System.out.println("Message from the second service.");
+    public String getMessage() {
+        return "Message from the second service.";
     }
 }
