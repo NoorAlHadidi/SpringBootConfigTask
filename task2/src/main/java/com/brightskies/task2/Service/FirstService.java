@@ -1,9 +1,9 @@
 package com.brightskies.task2.Service;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
-public class FirstService implements Service {
+@Service
+public class FirstService implements ServiceInterface {
     @Override
     public String getMessage() {
         return "Message from the first service.";

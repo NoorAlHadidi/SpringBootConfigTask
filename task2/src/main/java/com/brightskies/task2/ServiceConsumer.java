@@ -2,9 +2,9 @@ package com.brightskies.task2;
 
 import com.brightskies.task2.Service.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class ServiceConsumer {
     private FirstService firstService;
     private SecondService secondService;
